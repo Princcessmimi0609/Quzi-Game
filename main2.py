@@ -3,7 +3,7 @@ from PIL import Image, ImageFilter
 import time
 
 # Load an image
-image_path = "C:/Users/princ/Desktop/Python Projects/Quiz Game/images/moon.jpg"  # Replace with your image path
+image_path = "moon.jpg"  # Replace with your image path
 image = Image.open(image_path)
 
 # Display the original image
