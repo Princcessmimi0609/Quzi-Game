@@ -10,7 +10,7 @@ def get_base64_of_bin_file(bin_file):
     return base64.b64encode(data).decode()
 
 # Use your local image path
-image_base64 = get_base64_of_bin_file("C:/Users/princ/Desktop/Python Projects/Quiz Game/images/3482192.jpg")
+image_base64 = get_base64_of_bin_file("3482192.jpg")
 
 # Corrected CSS for Background Image using Base64
 page_bg_img = f'''
@@ -25,7 +25,7 @@ page_bg_img = f'''
 '''
 
 # Encode the local audio file in Base64
-audio_base64 = get_base64_of_bin_file("C:/Users/princ/Desktop/Python Projects/Quiz Game/audio/月亮代表我的心 The Moon Represents My Heart Piano.mp3")
+audio_base64 = get_base64_of_bin_file("月亮代表我的心 The Moon Represents My Heart Piano.mp3")
 
 # Embed Background Music using Base64
 audio_html = f'''
@@ -45,7 +45,7 @@ st.markdown(audio_html, unsafe_allow_html=True)
 
 
 # Display an example image
-image_path = ("C:/Users/princ/Desktop/Python Projects/Quiz Game/images/moon.jpg")
+image_path = ("moon.jpg")
 image = Image.open(image_path)
 st.image(image, use_column_width=True)
 
